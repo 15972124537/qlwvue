@@ -10,7 +10,7 @@
     </div>
     <router-link to='/city'>
       <div class="header-right">
-        {{this.city}}
+        {{city}}
         <span class="iconfont arrow-icon">&#xe64a;</span>
       </div>
     </router-link>
@@ -22,7 +22,9 @@
 export default {
   name: 'HomeHeader',
   data () {
-    return {}
+    return {
+      city: '城市'
+    }
   },
   methods: {}
 }
